@@ -1,0 +1,134 @@
+/* Fondo principal */
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #fff);
+  padding: 40px 20px;
+}
+
+/* Contenedor principal */
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Encabezado */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Calendario */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.custom-calendar {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input y botón */
+.task-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.task-input button {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-input button:hover {
+  background-color: #0277bd;
+}
+
+/* Tareas */
+.task-section {
+  text-align: left;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+  background: #e3f2fd;
+}
+
+.task-title {
+  font-weight: 500;
+}
+
+.task-date {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* Sin tareas */
+.no-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
