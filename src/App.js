@@ -4,7 +4,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "http://3.141.34.170:5000/api/tasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);
